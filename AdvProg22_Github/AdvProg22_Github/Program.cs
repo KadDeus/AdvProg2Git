@@ -10,10 +10,12 @@ namespace AdvProg22_Github
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
-            Console.WriteLine("Test");
+            string yourName;
+            Console.Write("Hello, what is your name: ");
+            yourName = Console.ReadLine();
+            Console.WriteLine("Your name is " + yourName);
 
-            Console.WriteLine("Press any key to continue.");
+            Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
         }
     }
