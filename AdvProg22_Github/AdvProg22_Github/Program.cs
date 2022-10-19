@@ -10,6 +10,10 @@ namespace AdvProg22_Github
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello World");
+
+            Console.WriteLine("Press any key to continue.");
+            Console.ReadKey();
         }
     }
 }
