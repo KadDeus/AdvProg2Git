@@ -11,14 +11,24 @@ namespace AdvProg22_Github
     {
         static void Main(string[] args)
         {
+    
             PrintLine("test");
             Print("Rest");
 
             Console.WriteLine("Hello World");
 
-            Console.WriteLine("Press any key to continue.");
+            string yourName;
+            Console.Write("Hello, what is your name: ");
+            yourName = Console.ReadLine();
+
+
+            PrintY();
+            Console.WriteLine("Your name is " + yourName);
+
+            Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
         }
+
 
         static void PrintLine(string text)
         {
@@ -41,6 +51,20 @@ namespace AdvProg22_Github
                 Console.Write(text.Substring(i, 1));
                 Thread.Sleep(20);
                 Console.ForegroundColor = ConsoleColor.White;
+            }
+        }
+
+        public static void PrintY()
+        {
+            Random rnd = new Random();
+
+            for(int i = 0; i < 10; i++)
+            {
+                Console.ForegroundColor = (ConsoleColor)rnd.Next(1, 15);
+                for(int j = 10; j > 0; j--)
+                {
+                    Console.BackgroundColor = (ConsoleColor)rnd.Next(1, 15);
+                }
             }
         }
     }
